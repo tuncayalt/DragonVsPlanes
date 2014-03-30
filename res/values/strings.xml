@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello" translatable="false">Hello World, BubblesEraActivity!</string>
+    <string name="app_name" translatable="false">Dragon vs Planes</string>
+    <string name="main_menu" translatable="false">Main Menu</string>
+    <string name="menu" translatable="false">MENU</string>
+    <string name="new_game" translatable="false">NEW GAME</string>
+    <string name="resume" translatable="false">RESUME</string>
+    <string name="options" translatable="false">OPTIONS</string>
+    <string name="game_rules" translatable="false">GAME INFO</string>
+    <string name="about" translatable="false">ABOUT</string>
+    <string translatable="false" name="exit">EXIT</string>
+    <string translatable="false" name="game_over_dialog">EXIT</string>
+    <string translatable="false" name="dialog_submit_button">Submit</string>
+	<string translatable="false" name="game_over">Game Over!</string>
+	<string translatable="false" name="scores">LEADERBOARD</string>
+	<string translatable="false" name="scores_header">TOP SCORES</string>
+	<string translatable="false" name="scores_button">OK</string>
+	<string translatable="false" name="game_speed">GAME SPEED</string>
+	<string translatable="false" name="sound">SOUND</string>
+	<string translatable="false" name="slow">Slow</string>
+	<string translatable="false" name="medium">Medium</string>
+	<string translatable="false" name="fast">Fast</string>
+	<string translatable="false" name="sound_on">Sound On</string>
+	<string translatable="false" name="sound_off">Sound Off</string>
+	<string translatable="false" name="about_sentence">Design and development by</string>
+	<string translatable="false" name="about_name">TUNCAY ALTINPULLUK</string>
+	<string translatable="false" name="back_button">Back</string>	
+		<string translatable="false" name="_touch_screen_to_fire_at_the_planes">- Touch or move your finger on the screen to fire at the planes</string>
+	<string translatable="false" name="drag_drop">- Drag &amp; Drop to move your dragon away from the planes</string>
+	<string translatable="false" name="crash_hurt">- If the planes crash your dragon, it will be hurt</string>
+	<string translatable="false" name="_drag_your_finger_on_the_screen_to_fire_faster">- Move your finger on the screen to fire easier</string>
+	<string translatable="false" name="_some_planes_follow_your_dragon">- Green planes follow your dragon</string>
+	<string translatable="false" name="_some_planes_are_fast">- Blue planes are fast</string>
+	<string translatable="false" name="_some_planes_fire_at_your_dragon">- Some planes fire at your dragon</string>
+	<string translatable="false" name="_take_flags_to_increase_firepower_or_drain_life">- Take flags to increase firepower or gain life</string>
+	<string translatable="false" name="multi_shot_flag">Multi Shot Flag</string>
+	<string translatable="false" name="rapid_shot_flag">Rapid Shot Flag</string>
+	<string translatable="false" name="life_drain_flag">Life Gain Flag (after killing planes)</string>
+	<string translatable="false" name="_the_flags_are_effective_for_limited_time">- The flags are effective for limited time</string>
+	<string translatable="false" name="back">Back</string>	
+	<string translatable="false" name="local">Local</string>	
+	<string translatable="false" name="global">Global</string>	
+	<string translatable="false" name="demo">Demo Video</string>	
+	<string translatable="false" name="ad_interstitial">>></string>	
+	<string translatable="false" name="game_menu">GAME MENU</string>	
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tuncay.dragonvsplanes"
+    android:versionCode="11"
+    android:versionName="1.2.5" >
+
+    <uses-sdk 
+        android:minSdkVersion="10"   	
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/red_dragon"
+        android:label="@string/app_name" >
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <!-- <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/> -->        
+        <activity
+            android:name="com.tuncay.dragonvsplanes.MainMenuStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tuncay.dragonvsplanes.BubblesEraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.tuncay.dragonvsplanes.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tuncay.dragonvsplanes.MainMenuResumeActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tuncay.dragonvsplanes.GameOverActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tuncay.dragonvsplanes.ScoresActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity
+            android:name="com.tuncay.dragonvsplanes.OptionsActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.tuncay.dragonvsplanes.AboutActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="com.tuncay.dragonvsplanes.GameInfoActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

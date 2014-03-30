@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >        
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-5819132225601729/1286584692" />
+    
+    <TextView  
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:textAppearance="?android:attr/textAppearanceLarge"
+    	android:textColor="#EE1111"
+        android:id="@+id/txtGameSpeed"
+        android:text="@string/game_speed">  	
+    </TextView>
+    <RadioGroup 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	<RadioButton android:id="@+id/radSlow"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/slow"
+        	android:onClick="onSpeedRadioButtonClicked"/>
+    	<RadioButton android:id="@+id/radMedium"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/medium"
+        	android:onClick="onSpeedRadioButtonClicked"/>
+    	<RadioButton android:id="@+id/radFast"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/fast"
+        	android:onClick="onSpeedRadioButtonClicked"/>
+	</RadioGroup>    
+    <TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"    
+    	android:textAppearance="?android:attr/textAppearanceLarge"
+    	android:textColor="#EE1111"
+    	android:id="@+id/txtSound"
+        android:text="@string/sound" >
+    </TextView>
+    <RadioGroup 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	<RadioButton android:id="@+id/radSoundOn"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sound_on"
+        	android:onClick="onSoundRadioButtonClicked"/>
+    	<RadioButton android:id="@+id/radSoundOff"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sound_off"
+        	android:onClick="onSoundRadioButtonClicked"/>    	
+	</RadioGroup>
+	<Button 
+    style="@style/main_menu_style"  
+    android:id="@+id/btnOptions" 
+    android:text="@string/back_button" 
+    android:onClick="onClickBtnOptions" />
+	
+	
+	
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:orientation="vertical">
+<TextView 
+    android:id="@+id/txtAbout" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/about_sentence" 
+    android:layout_gravity="center_horizontal" 
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#FFFFFF"
+/>
+<TextView 
+    android:id="@+id/txtAboutName" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/about_name" 
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:textSize="30sp" 
+    android:textColor="#FF0000"
+/>
+<Button 
+    style="@style/main_menu_style"  
+    android:id="@+id/btnAbout" 
+    android:text="@string/back_button" 
+     android:onClick="onClickBtnAbout"
+/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="main_menu_style"
+        parent="@android:style/Widget.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#EE0011</item>
+        <item name="android:typeface">monospace</item>     
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>       
+     	
+     	<!-- <item name="android:shadowColor">#00ccee</item>   
+     	<item name="android:shadowRadius">1.5</item>   
+     	<item name="android:shadowDx">1</item>   
+     	<item name="android:shadowDy">1</item> -->   
+     	
+    </style>
+</resources>

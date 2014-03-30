@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >    
+    
+    <com.tuncay.dragonvsplanes.MainGamePanel
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainGamePanel"
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="1.0">
+    </com.tuncay.dragonvsplanes.MainGamePanel>
+    	
+
+    <Button 
+        style="@style/main_menu_style"   
+        android:id="@+id/btnBottomMenu"
+        android:text="@string/menu"        
+    />
+    
+
+</LinearLayout>

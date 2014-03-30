@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txtScoreCursorNumber"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtScoreCursorName"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/txtScoreCursorNumber"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtScoreCursorScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/txtScoreCursorName"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
