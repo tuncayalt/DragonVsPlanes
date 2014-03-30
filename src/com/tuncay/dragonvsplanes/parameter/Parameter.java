@@ -1,5 +1,7 @@
 package com.tuncay.dragonvsplanes.parameter;
 
+import com.tuncay.dragonvsplanes.model.components.GameSpeed;
+
 public class Parameter {
 	public static final int bossTurn = 11;
 	public static int probEvilBubble = 2;
@@ -10,10 +12,14 @@ public class Parameter {
 	public static int multiShotRadius = 20;
 	public static int getReadyTime = 100;
 	
+	public static GameSpeed gameSpeed = GameSpeed.Medium;
 	// desired fps
 	public static int MAX_FPS = 35;
 	// maximum number of frames to be skipped
+
 	public static int MAX_FRAME_SKIPS = 5;
 	
 	public static boolean soundOn = true;
+	
+	
 }

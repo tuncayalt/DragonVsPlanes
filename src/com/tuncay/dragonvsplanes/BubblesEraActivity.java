@@ -120,6 +120,7 @@ public class BubblesEraActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onStart() {
 		super.onStart();
+		
 		//for google analytics
 		EasyTracker.getInstance(this).activityStart(this);
 	}

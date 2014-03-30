@@ -281,7 +281,17 @@ public abstract class Bubble extends Vehicle {
 		}
 	}
 	public void givePoints() {
-		Tools.points += getPrize();		
+		int prize = getPrize();
+		switch (Parameter.gameSpeed){
+		case Slow:
+			prize = (int)(prize * 0.6);
+			break;
+		case Fast:
+			prize = (int)(prize * 1.4);
+			break;
+		default:
+			break;
+		}
+		Tools.points += prize;
 	}
-	
 }

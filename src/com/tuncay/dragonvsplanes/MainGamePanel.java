@@ -136,6 +136,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
 				goodBubble.setLongTouched(false);
 			}
 		}				
+		
 		return true;
 	}
 	
