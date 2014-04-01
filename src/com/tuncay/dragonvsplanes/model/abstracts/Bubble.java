@@ -20,7 +20,10 @@ import com.tuncay.dragonvsplanes.parameter.Parameter;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.util.Log;
 import android.view.View;
 
@@ -129,6 +132,29 @@ public abstract class Bubble extends Vehicle {
 		Rect dst = new Rect(x - width / 2, y - height / 2, x + width / 2, y + height / 2);
 		canvas.drawBitmap(bitmap, src, dst, null);
 		//.drawBitmap(bitmap, x - (this.getWidth() / 2), y - (this.getHeight() / 2), null);
+		float healthRate = 0;
+		if (this.getBody().getFullLife() != 0)	
+			healthRate = this.getBody().getLife() / this.getBody().getFullLife();
+		
+		drawHealthBar(healthRate, canvas);
+	}
+
+	private void drawHealthBar(float healthRate, Canvas canvas) {
+		if (healthRate >= 0){
+			float barX = x - width / 2;
+			float barY = y - height / 2 - 10;
+			RectF rect = new RectF (barX, barY, barX + healthRate * width, barY + 5);
+			Paint paint = new Paint();
+			paint.setColor(Color.GREEN);
+			canvas.drawRect(rect, paint);
+			if (healthRate < 1) {
+				barX += healthRate * width;
+				rect = new RectF(barX, barY, barX + (1 - healthRate) * width,
+						barY + 5);
+				paint.setColor(Color.RED);
+				canvas.drawRect(rect, paint);
+			}
+		}
 	}
 	
 	public void bubbleCollisionCheck(View view) {
